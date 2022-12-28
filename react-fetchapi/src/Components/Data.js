@@ -1,4 +1,5 @@
 import React from 'react';
+import '../CSS/Data.css'
 
 // API endpoint URL https://jsonplaceholder.typicode.com/users
 
