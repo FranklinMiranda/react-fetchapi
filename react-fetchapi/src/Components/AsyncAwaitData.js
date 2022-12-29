@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 // This is a boilerplate for fetching Data using Async/Await
@@ -8,7 +8,7 @@ function AxiosData() {
   const [loading, setLoading] = useState(false);
   const [posts, setPosts] = useState([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const loadPost = async () => {
       setLoading(true);
 
