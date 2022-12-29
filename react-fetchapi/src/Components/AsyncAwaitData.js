@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // This is a boilerplate for fetching Data using Async/Await
@@ -22,8 +22,7 @@ function AxiosData() {
     loadPost();
   }, []);
 
-  return <div className="AxiosData">{loading ? <h4>Loading...</h4> : posts.map((item) => <h4>{item.title}</h4>)}</div>;
+  return  <div className="AxiosData">{loading ? <h4>Loading...</h4> : posts.map((item) => <h4>{item.title}</h4>)}</div>;
 }
 
-export default AxiosData
-
+export default AxiosData;
