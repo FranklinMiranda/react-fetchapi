@@ -1,10 +1,15 @@
 // Hooks allow me to use State and other React features without writing a class
 // Hooks were introduced in React 16.8
 
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 const Example = () => {
     const [count, setCount] = useState(0)
+
+    useEffect(() => {
+        document.title = `You clicked ${count} times`
+
+    })
 
     return (
         <div>
