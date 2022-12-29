@@ -1,4 +1,4 @@
 import React from "react";
 
-// This is a boilerplate for using Fetch and API with API keys
+// This is a boilerplate for fetching Data using Async/Await
 

@@ -4,7 +4,7 @@ import Data from './Data';
 class App extends React.Component {
   render() {
     return <div className="App">
-        <Data/>
+        <FetchAPIData/>
     </div>;
   }
 }
