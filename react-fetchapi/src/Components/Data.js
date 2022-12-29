@@ -1,5 +1,5 @@
 import React from 'react';
-import '../CSS/Data.css'
+import '../CSS/Data.css';
 
 // API endpoint URL https://jsonplaceholder.typicode.com/users
 
@@ -8,7 +8,7 @@ class Data extends React.Component {
     super(props);
 
     this.state = {
-      items: [],
+      items: '',
       DataisLoaded: false,
     };
   }
@@ -37,16 +37,24 @@ class Data extends React.Component {
     return (
       <div className="Data">
         <h1>Fetch data from an API in React</h1>
+
         {items.map((item) => (
-          <ol key={item.id}>
-            User_Name: {item.username}
-            Full_Name: {item.name}
-            User_Email: {item.email}
-          </ol>
+          <div key={item.id}>
+            <h1>{item.name}</h1>
+            <ol>
+              <li> User_Name: {item.username}</li>
+              <li> Email: {item.email}</li>
+              <li> Phone: {item.phone}</li>
+              <li> City: {item.address.city}</li>
+              <li> Zip Code: {item.address.zipcode}</li>
+              <li> Company: {item.company.name}</li>
+              <li> Business: {item.company.bs}</li>
+            </ol>
+          </div>
         ))}
       </div>
     );
   }
 }
 
-export default Data 
+export default Data;
