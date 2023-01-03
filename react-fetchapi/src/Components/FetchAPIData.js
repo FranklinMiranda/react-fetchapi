@@ -2,7 +2,8 @@ import React from 'react';
 import '../CSS/Data.css';
 
 // API endpoint URL https://jsonplaceholder.typicode.com/users
-// This is a  boilerplate for importing Data using Fetch API and a JSON API
+// This is a  boilerplate for importing Data using Fetch API 
+// This code uses ES6 Classes, LIfecycle Methods, and Fetch API
 
 class Data extends React.Component {
   constructor(props) {
