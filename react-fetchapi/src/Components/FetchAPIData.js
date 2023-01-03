@@ -17,7 +17,7 @@ class Data extends React.Component {
   // Lifecycle Method ComponentDidMount is used to execute fetch when the Data Component is first rendered
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
-      .then((res) => res.json())
+      .then((response) => response.json())
       .then((data) => {
         this.setState({
           items: data,

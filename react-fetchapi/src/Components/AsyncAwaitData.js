@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+// API endpoint URL https://jsonplaceholder.typicode.com/posts/
 // This is a boilerplate for fetching Data using Async/Await
 // This code also uses React hooks in simple functional components
 
@@ -8,6 +9,7 @@ function AxiosData() {
   const [loading, setLoading] = useState(false);
   const [posts, setPosts] = useState([]);
 
+  // useEffect achieves the same result as a lifecycle method
   useEffect(() => {
     const loadPost = async () => {
       setLoading(true);
